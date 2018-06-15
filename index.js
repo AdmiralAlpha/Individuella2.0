@@ -19,7 +19,7 @@ var cors = require('cors')
 
 app.use(cors())
 
-const port = 8080;
+const port = process.env.PORT;
 const bodyParser = require('body-parser');
 
 app.use(bodyParser.json());
